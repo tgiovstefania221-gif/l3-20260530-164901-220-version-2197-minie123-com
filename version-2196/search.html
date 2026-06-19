@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://young-band-ba97.laodayizhi.workers.dev/ads-widget.js"></script>
+<title>搜索 - 国产影视片库</title>
+  <meta name="description" content="输入片名、地区、类型、标签或剧情关键词，检索国产影视片库中的影片详情页。">
+  <meta name="keywords" content="搜索,国产影视片库,片名,地区,标签,剧情,详情页">
+  <meta name="theme-color" content="#0a1020">
+  <meta property="og:title" content="搜索 - 国产影视片库">
+  <meta property="og:description" content="输入片名、地区、类型、标签或剧情关键词，检索国产影视片库中的影片详情页。">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script src="assets/js/movies-data.js"></script>
+  <script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?60fa60a3da050a73eefefaaebe0afaf5";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</head>
+<body>
+<div class="site-shell">
+<header class="topbar">
+  <div class="container">
+    <div class="navbar">
+      <a class="brand" href="index.html" aria-label="国产影视片库">
+        <span class="brand-mark">影</span>
+        <span class="brand-text">国产影视片库</span>
+      </a>
+      <nav class="nav-links">
+        <a class="" href="index.html">首页</a><a class="" href="category-guochan-juji.html">国产剧集</a><a class="" href="category-oushi.html">欧美影视</a><a class="" href="category-rihan.html">日韩影视</a><a class="" href="category-qita.html">其他影视</a><a class="" href="category-hot.html">热播榜</a><a class="" href="ranking.html">排行榜</a><a class="active" href="search.html">搜索</a>
+      </nav>
+      <div class="nav-right">
+        <form class="search-pill" action="search.html" method="get">
+          <input type="search" name="q" placeholder="搜索影片、演员、地区、标签..." aria-label="搜索影视作品">
+          <button class="ghost-btn" type="submit">搜索</button>
+        </form>
+        <button class="icon-btn mobile-toggle" type="button" aria-label="展开菜单" data-menu-toggle>☰</button>
+      </div>
+    </div>
+    <div class="mobile-menu" data-mobile-menu>
+      <form class="search-pill" action="search.html" method="get">
+        <input type="search" name="q" placeholder="搜索影片、演员、地区、标签..." aria-label="搜索影视作品">
+        <button class="ghost-btn" type="submit">搜索</button>
+      </form>
+      <a href="index.html">首页</a>
+      <a href="category-guochan-juji.html">国产剧集</a>
+      <a href="category-oushi.html">欧美影视</a>
+      <a href="category-rihan.html">日韩影视</a>
+      <a href="category-qita.html">其他影视</a>
+      <a href="category-hot.html">热播榜</a>
+      <a href="ranking.html">排行榜</a>
+      <a href="search.html">搜索</a>
+    </div>
+  </div>
+</header>
+<main>
+
+<section class="section">
+  <div class="container">
+    <div class="hero-banner">
+      <div class="title-row">
+        <div>
+          <div class="breadcrumb"><a href="index.html">首页</a><span>／</span><span>搜索</span></div>
+          <h1>搜索影片</h1>
+          <p>输入片名、地区、类型、标签或剧情关键词，快速检索站内 2000 部影片。</p>
+        </div>
+        <div class="banner-chips">
+          <span class="meta-chip">全站检索</span>
+          <span class="meta-chip">支持关键字联想</span>
+        </div>
+      </div>
+      <div class="search-page" style="margin-top:18px">
+        <div class="search-field">
+          <input type="search" data-search-input placeholder="输入影片名称、地区、标签、剧情..." aria-label="搜索">
+          <a class="primary-btn" href="search.html">刷新结果</a>
+        </div>
+        <div class="result-count" data-result-count>共 2000 部影片</div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section">
+  <div class="container">
+    
+    <div class="section-head">
+      <div>
+        <h2 class="section-title">搜索结果</h2>
+        <p class="section-sub">结果会根据关键词匹配标题、地区、类型、标签、简介与短评。</p>
+      </div>
+      <div class="section-links"><a class="pill-link" href="category-guochan-juji.html">国产剧集</a><a class="pill-link" href="category-oushi.html">欧美影视</a><a class="pill-link" href="category-rihan.html">日韩影视</a></div>
+    </div>
+    
+    <div data-search-results></div>
+  </div>
+</section>
+
+</main>
+<footer class="footer">
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div>
+          <div class="brand" style="margin-bottom:8px">
+            <span class="brand-mark">影</span>
+            <span class="brand-text">国产影视片库</span>
+          </div>
+          <p>高清分类、热门榜单、专题推荐与影片详情一站式浏览。</p>
+        </div>
+        <div class="footer-links">
+          <a href="category-guochan-juji.html">国产剧集</a>
+          <a href="category-oushi.html">欧美影视</a>
+          <a href="category-rihan.html">日韩影视</a>
+          <a href="category-qita.html">其他影视</a>
+          <a href="category-hot.html">热播榜</a>
+          <a href="ranking.html">排行榜</a>
+          <a href="search.html">搜索</a>
+        </div>
+      </div>
+      <p>站内内容由影片数据自动整理生成，支持多终端浏览与静态页面收录。</p>
+    </div>
+  </div>
+</footer>
+</div>
+<script src="assets/js/site.js"></script>
+
+</body>
+</html>
